@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/devon-the-developer/MagicCardsProject#readme",
   "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
     "jest": "^24.5.0",
     "nodemon": "^1.17.3"
   }
