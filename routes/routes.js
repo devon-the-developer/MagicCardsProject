@@ -2,7 +2,7 @@ const EXPRESS = require('express')
 const ROUTER = EXPRESS.Router()
 
 ROUTER.get('/', function (req, res) {
-  res.send("Hello there")
+  res.render("../views/layouts/main.hbs")
 })
 
 module.exports = ROUTER
