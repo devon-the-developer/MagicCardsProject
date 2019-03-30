@@ -391,6 +391,15 @@ hr {
   display: table;
   clear: both; }
 
+/* My own code -devon
+__________________________________________________ */
+
+.img-cards {
+  background: black;
+  width: 250px;
+  height: 250px;
+}
+
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
