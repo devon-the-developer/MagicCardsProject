@@ -10,7 +10,7 @@
           "Deathtouch",
           "lifelink"
         ],
-        "flavourText": "A few aetherborn have discovered a way  to sustain their own existences at the cost of an instatiable hunger for the life essence of other beings."
+        "flavorText": "A few aetherborn have discovered a way  to sustain their own existences at the cost of an instatiable hunger for the life essence of other beings."
       },
       "power": 2,
       "toughness": 3,
@@ -26,7 +26,7 @@
           "Flying",
           "At the beginning of your upkeep, you lose 1 life."
         ],
-        "flavourText": "'Touched by moroii' - Undercity slang meaning 'to grow old'"
+        "flavorText": "'Touched by moroii' - Undercity slang meaning 'to grow old'"
       },
       "power": 4,
       "toughness": 4,
@@ -39,7 +39,7 @@
       "type": "Instant",
       "textBox": {
         "abilities": "Counter target spell",
-        "flavourText": ""
+        "flavorText": ""
       },
       "power": null,
       "toughness": null,
