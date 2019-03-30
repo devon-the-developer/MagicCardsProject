@@ -1,0 +1,40 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "name": ,
+      "manaCost": ,
+      "textBox": {
+        "abilities": ,
+        "flavourText":
+      },
+      "power": ,
+      "toughness": ,
+      "image":
+    },
+    {
+      "id": 2,
+      "name": ,
+      "manaCost": ,
+      "textBox": {
+        "abilities": ,
+        "flavourText":
+      },
+      "power": ,
+      "toughness": ,
+      "image":
+    },
+    {
+      "id": 3,
+      "name": ,
+      "manaCost": ,
+      "textBox": {
+        "abilities": ,
+        "flavourText":
+      },
+      "power": ,
+      "toughness": ,
+      "image":
+    }
+  ]
+}
