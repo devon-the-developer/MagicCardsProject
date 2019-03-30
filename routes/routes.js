@@ -13,6 +13,8 @@ ROUTER.get('/cards/:name', function (req, res) {
   res.render('../views/cards/view', grabbedCard)
 } )
 
-
+ROUTER.get('/addcard', function (req, res) {
+  res.render('../views/cards/addcard')
+})
 
 module.exports = ROUTER
