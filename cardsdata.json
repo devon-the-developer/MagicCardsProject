@@ -2,39 +2,48 @@
   "cards": [
     {
       "id": 1,
-      "name": ,
-      "manaCost": ,
+      "name": "Gifted Aetherborn",
+      "manaCost": 2,
+      "type": "Creature - Aetherborn Vampire",
       "textBox": {
-        "abilities": ,
-        "flavourText":
+        "abilities": [
+          "Deathtouch",
+          "lifelink"
+        ],
+        "flavourText": "A few aetherborn have discovered a way  to sustain their own existences at the cost of an instatiable hunger for the life essence of other beings."
       },
-      "power": ,
-      "toughness": ,
-      "image":
+      "power": 2,
+      "toughness": 3,
+      "image": "/giftedaetherborn.jpg"
     },
     {
       "id": 2,
-      "name": ,
-      "manaCost": ,
+      "name": "Moroii",
+      "manaCost": 4,
+      "type": "Creature - Vampire",
       "textBox": {
-        "abilities": ,
-        "flavourText":
+        "abilities": [
+          "Flying",
+          "At the beginning of your upkeep, you lose 1 life."
+        ],
+        "flavourText": "'Touched by moroii' - Undercity slang meaning 'to grow old'"
       },
-      "power": ,
-      "toughness": ,
-      "image":
+      "power": 4,
+      "toughness": 4,
+      "image": "/moroii.jpg"
     },
     {
       "id": 3,
-      "name": ,
-      "manaCost": ,
+      "name": "Counterspell",
+      "manaCost": 2,
+      "type": "Instant",
       "textBox": {
-        "abilities": ,
-        "flavourText":
+        "abilities": "Counter target spell",
+        "flavourText": ""
       },
-      "power": ,
-      "toughness": ,
-      "image":
+      "power": null,
+      "toughness": null,
+      "image": "/counterspell.jpg"
     }
   ]
 }
