@@ -1,0 +1,25 @@
+{
+  "name": "magiccardsproject",
+  "version": "1.0.0",
+  "description": "A MTG Card Comparison App",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --noStackTrace",
+    "start": "node index.js",
+    "debug": "nodemon --inspect index --ignore cardsdata.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devon-the-developer/MagicCardsProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devon-the-developer/MagicCardsProject/issues"
+  },
+  "homepage": "https://github.com/devon-the-developer/MagicCardsProject#readme",
+  "dependencies": {
+    "jest": "^24.5.0",
+    "nodemon": "^1.17.3"
+  }
+}
