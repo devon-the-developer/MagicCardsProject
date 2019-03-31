@@ -15,7 +15,7 @@ Compare individual cards
 
 Main page sort by: Price, Mana Cost, Power, Toughness
 
-Each card has a list of links to cards that are similar generated next to it.
+Each card has a list of links to cards that are similar generated next to it. (Done)
 
 Simple CSS styling
 
