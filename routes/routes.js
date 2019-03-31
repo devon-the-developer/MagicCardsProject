@@ -18,8 +18,12 @@ ROUTER.get('/addcard', function (req, res) {
 })
 
 ROUTER.post('/addcard', function (req, res) {
-  let cardToAdd = req.body
+  let cardToAdd = req.body;
+  cardToAdd.id = CARDSDATA.cards.length + 1;
+  let arrayOfCards = CARDSDATA.cards;
+  arrayOfCards.push(cardToAdd);
   console.log(cardToAdd)
+  console.log(arrayOfCards)
 })
 
 module.exports = ROUTER
