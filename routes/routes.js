@@ -11,33 +11,33 @@ ROUTER.get('/cards/:name', function (req, res) {
   let cardName = req.params.name;
   let grabbedCard = CARDSDATA.cards.find(x => x.name == cardName);
 
-  function findSimilarCards(card, listOfCards) {
+  function findSimilarCards(card) {
     let arrayOfTypes = card.type.split(' ');
     arrayOfTypes = arrayOfTypes.filter(x => x !== '-')
-    console.log(arrayOfTypes)
-    // let cardTypesSplit = listOfCards.map(x => x.type.split(' '));
-    // let cardTypesSimilar = listOfCards.filter(x => x.type.includes(arrayOfTypes))
     
     function checkTheList() {
-      let listOfSimilar = [];
+      let cardsToReturn = [];
+      let cardList = CARDSDATA.cards;
       for (var x = 0; x < arrayOfTypes.length; x++) {
-        for (var i = 0; i < CARDSDATA.cards.length; i++) {
-          if (card.name !== CARDSDATA.cards[i].name) {
-            if (CARDSDATA.cards[i].type.includes(arrayOfTypes[x])) {
-                if (!listOfSimilar.includes(CARDSDATA.cards[i].name)) {
-                console.log(CARDSDATA.cards[i].name)
-                listOfSimilar.push(CARDSDATA.cards[i].name)
+        for (var i = 0; i < cardList.length; i++) {
+          if (card.name !== cardList[i].name) {
+            if (cardList[i].type.includes(arrayOfTypes[x])) {
+                if (!cardsToReturn.includes(cardList[i])) {
+                cardsToReturn.push(cardList[i])
                 x++
                 }
             }
           }
         }
       }
-      return listOfSimilar
+      return cardsToReturn
     }
-    let something = checkTheList();
+
+
+   let listToDisplay = checkTheList();
+   console.log(listToDisplay)
   }
-  findSimilarCards(grabbedCard, CARDSDATA.cards)
+  findSimilarCards(grabbedCard)
   res.render('../views/cards/view', grabbedCard)
 } )
 
