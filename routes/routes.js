@@ -22,7 +22,12 @@ ROUTER.post('/addcard', function (req, res) {
   cardToAdd.id = CARDSDATA.cards.length + 1;
   let arrayOfCards = CARDSDATA.cards;
   arrayOfCards.push(cardToAdd);
-  console.log(cardToAdd)
+
+  dataToWrite = JSON.stringify(arrayOfCards);
+  FS.writeFile("../cardsdata.json", dataToWrite, 'utf8', (err) => {
+    if (err) throw err;
+    console.log('The file has been saved')
+  })
   console.log(arrayOfCards)
 })
 
