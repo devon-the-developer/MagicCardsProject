@@ -18,12 +18,22 @@ ROUTER.get('/addcard', function (req, res) {
 })
 
 ROUTER.post('/addcard', function (req, res) {
-  let cardToAdd = req.body;
-  let cardKeys = Object.keys(cardToAdd);
-  let cardValues = Object.values(cardToAdd);
+  let detailsToAdd = req.body;
+  let cardToAdd = {
+    id: 0,
+    name: detailsToAdd.name,
+    manaCost: detailsToAdd.manaCost,
+    type: detailsToAdd.type,
+    textBox: {
+      abilities: detailsToAdd.abilities,
+      flavorText: detailsToAdd.flavorText
+    },
+    power: detailsToAdd.power,
+    toughness: detailsToAdd.toughness,
+    image: detailsToAdd.image
+  };
+
 //where you left off - tyring to get abilities & flavorText in object textBox
-  console.log(cardKeys)
-  console.log(cardValues)
   cardToAdd.id = CARDSDATA.cards.length + 1;
   let arrayOfCards = CARDSDATA.cards;
   arrayOfCards.push(cardToAdd);
@@ -36,7 +46,7 @@ ROUTER.post('/addcard', function (req, res) {
   })
 
   res.redirect('/')
-  console.log(arrayOfCards)
+  console.log(CARDSDATA.cards)
 })
 
 module.exports = ROUTER
