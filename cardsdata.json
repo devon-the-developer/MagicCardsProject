@@ -14,7 +14,7 @@
       },
       "power": 2,
       "toughness": 3,
-      "image": "/giftedaetherborn.jpg"
+      "image": "/images/giftedaetherborn.jpg"
     },
     {
       "id": 2,
@@ -30,7 +30,7 @@
       },
       "power": 4,
       "toughness": 4,
-      "image": "/moroii.jpg"
+      "image": "/images/moroii.jpg"
     },
     {
       "id": 3,
@@ -43,7 +43,7 @@
       },
       "power": null,
       "toughness": null,
-      "image": "/counterspell.jpg"
+      "image": "/images/counterspell.jpg"
     }
   ]
 }

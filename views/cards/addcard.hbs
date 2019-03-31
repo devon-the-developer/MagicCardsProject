@@ -1,5 +1,25 @@
-<form action="" method="POST">
-  <strong>Name:</strong><input name="name" type="text">
-  <strong>Type:</strong><input name="type" type="text">
-
+<form action="addcard" method="POST">
+  <fieldset>
+    <div>
+      <strong>Name:</strong><input name="name" type="text">
+      <strong>Type:</strong><input name="type" type="text">
+    </div>
+    <div>
+      <strong>Mana Cost:</strong><input name="manaCost" type="number">
+    </div>
+  </fieldset>
+  <fieldset>
+    <div name="textBox">
+      <strong>Abilities:</strong><input name="abilities" type="text">
+      <strong>Flavor Text:</strong><input name="flavorText" type="text">
+    </div>
+    <div>
+      <strong>Power:</strong><input name="power" type="number">
+      <strong>Toughness:</strong><input name="toughness" type="number">
+    </div>
+  </fieldset>
+  <div>
+  <strong>Image:</strong><input name="image" type="url">
+  </div>
+  <button>ADD CARD</button>
 </form>
