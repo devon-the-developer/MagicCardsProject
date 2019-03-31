@@ -11,4 +11,9 @@
       <li>Toughness: {{toughness}}</li>
     </ul>
   </div>
+  <div>
+    <p>Similar Cards: {{#each similar}}
+      <a href="/cards/{{name}}">{{name}}</a>
+      {{/each}}
+  </p></div>
 </div>

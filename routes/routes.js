@@ -35,7 +35,8 @@ ROUTER.get('/cards/:name', function (req, res) {
 
 
    let listToDisplay = checkTheList();
-   console.log(listToDisplay)
+   grabbedCard.similar = listToDisplay;
+   console.log(grabbedCard)
   }
   findSimilarCards(grabbedCard)
   res.render('../views/cards/view', grabbedCard)
